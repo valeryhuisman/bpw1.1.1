@@ -32,7 +32,9 @@ public class cutscenetrigger : MonoBehaviour
    cutsceneCam.SetActive(false);
    cutsceneCam1.SetActive(false);
 
-    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+   Cursor.visible = true;
+   Cursor.lockState = CursorLockMode.None;
+   SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
 
    }
 
